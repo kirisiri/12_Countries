@@ -6,7 +6,7 @@ var countriesList = $('#countries');
 $('#search').click(searchCountries);
 
 function searchCountries() {
-    var countryName = $('country-name').val;
+    var countryName = $('country-name').val();
     if (!countryName.length) {
         countryName = 'Poland';
     }
