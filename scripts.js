@@ -21,6 +21,7 @@ function showCountriesList(resp) {
     countriesList.empty();
     resp.forEach(function(item) {
         $('<li>').text(item.name).appendTo(countriesList);   
+        $('<li>').text("Its capital is: " + item.capital + ".").appendTo(countriesList);
     });
 }
 
